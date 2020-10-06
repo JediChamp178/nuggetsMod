@@ -7,6 +7,8 @@
 from math import pi
 from random import randint
 
+from nType import xdict
+
 def calcGrade(percentageGrade):
     'Takes a percentage grade and converts it to letter; returns result'
     
@@ -76,6 +78,6 @@ def c2f(celsius):
     farenheit = (celsius / (5/9)) + 32
     return farenheit
 
-'''def minToHours(minutes):
+def minToHours(minutes):
     'converts minutes to hours and minutes'
-    return dict(('hours', 'minutes'), divmod(minutes, 60))'''
+    return xdict(('hours', 'minutes'), divmod(minutes, 60))
